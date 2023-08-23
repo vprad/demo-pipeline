@@ -1,5 +1,5 @@
-# Use the official OpenJDK base image
-FROM adoptopenjdk:17-jre-hotspot
+# Use the official OpenJDK 11 base image
+FROM adoptopenjdk:11-jre-hotspot
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -12,3 +12,4 @@ EXPOSE 8080
 
 # Run the application when the container starts
 CMD ["java", "-jar", "app.jar"]
+
